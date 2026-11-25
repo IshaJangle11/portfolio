@@ -45,8 +45,8 @@ export const skills = {
 };
 
 export const education = [
-  { year: '2022', title: 'B.Tech, Computer Engineering', place: 'Government College of Engineering Jalgaon' },
-  { year: '2019', title: 'Diploma, Computer Engineering', place: 'G H Raisoni Polytechnic' },
+  { year: '2022', title: 'B.Tech, Computer Engineering', place: 'Government College of Engineering, Jalgaon' },
+  { year: '2019', title: 'Diploma, Computer Engineering', place: 'G H Raisoni Polytechnic, Jalgaon' },
 ];
 
 export const projects = [
