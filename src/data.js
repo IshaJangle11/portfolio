@@ -3,7 +3,7 @@ export const profile = {
   name: 'Isha Jangle',
   role: 'Software Engineer · Frontend developer',
   intro:
-    'Hey! I’m Isha Jangle, a Software Engineer at TCS in Pune. My coding journey began in 2016, in my diploma days, with a few lines of HTML and CSS. I refreshed the browser, saw my own page appear, and was hooked. Today I build React interfaces, currently for Royal Mail Group, and I’ve also worked with clients like Pfizer.',
+    'Hey! I’m Isha Jangle, a Software Engineer at TCS in Pune. My coding journey began in 2016, with a few lines of HTML and CSS. I refreshed the browser, saw my own page appear, and was hooked. Today I build React interfaces for global clients in the pharma and logistics sectors.',
   intro2:
     'When I’m not coding, you can find me travelling to new places and cooking new dishes.',
   links: [
