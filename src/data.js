@@ -3,7 +3,9 @@ export const profile = {
   name: 'Isha Jangle',
   role: 'Software Engineer · Frontend developer',
   intro:
-    'Hello, I’m Isha Jangle, a Software Engineer at TCS. One browser refresh turned into a career. I build React interfaces that are fast, clear and easy to use, and I’ve spent four years in Pune doing it for clients like Pfizer and Royal Mail Group.',
+    'Hey! I’m Isha Jangle, a Software Engineer at TCS in Pune. My coding journey began in 2016, in my diploma days, with a few lines of HTML and CSS. I refreshed the browser, saw my own page appear, and was hooked. Today I build React interfaces, currently for Royal Mail Group, and I’ve also worked with clients like Pfizer.',
+  intro2:
+    'When I’m not coding, you can find me travelling to new places and cooking new dishes.',
   links: [
     { label: 'Email me', href: 'mailto:isha.jangle11@gmail.com' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/isha-jangle-b26460201' },
@@ -17,21 +19,23 @@ export const about = [
   'After a diploma and a B.Tech in Computer Engineering, I joined Tata Consultancy Services in 2022. As a fresher, I got the opportunity to work on React.js projects for clients like Pfizer and Royal Mail Group, and that’s where my interest turned into real experience. I care most about interfaces that are fast, clear, and easy for everyone to use.',
 ];
 
-export const experienceIntro =
-  'Frontend developer at Tata Consultancy Services since 2022, working with global clients.';
-
-export const experience = [
-  {
-    period: '2025 – present',
-    title: 'Royal Mail Group',
-    text: 'Client project through Tata Consultancy Services. Building user interfaces with React.js.',
-  },
-  {
-    period: '2022 – 2025',
-    title: 'Pfizer',
-    text: 'Worked on React.js projects as a fresher, building responsive, accessible web interfaces.',
-  },
-];
+export const experience = {
+  period: '2022 – present',
+  title: 'Tata Consultancy Services',
+  text: 'Software Engineer. I build, style and ship high-quality, responsive web interfaces with React.js for global clients.',
+  clients: [
+    {
+      name: 'Royal Mail Group',
+      period: '2025 – present',
+      text: 'Building and maintaining user interfaces with React.js, working closely with the team to deliver features.',
+    },
+    {
+      name: 'Pfizer',
+      period: '2022 – 2025',
+      text: 'Built, styled and shipped high-quality, accessible websites with React.js, starting as a fresher.',
+    },
+  ],
+};
 
 export const skills = {
   Frontend: ['React.js', 'JavaScript (ES6+)', 'TypeScript'],
@@ -50,10 +54,12 @@ export const projects = [
     title: 'Personal portfolio',
     text: 'This website: a responsive, accessible portfolio that shares my story, skills and experience.',
     tags: ['React.js', 'Vite', 'HTML', 'CSS'],
+    link: 'https://github.com/IshaJangle11/portfolio',
   },
   {
     title: 'Personal finance tracker',
     text: 'A tool to track personal income and expenses in one place.',
-    tags: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MySQL'],
+    tags: ['Vanilla JavaScript', 'HTML', 'CSS', 'IndexedDB'],
+    link: 'https://github.com/IshaJangle11/ExpenseTracker',
   },
 ];

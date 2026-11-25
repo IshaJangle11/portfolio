@@ -266,6 +266,37 @@ a {
     transform: none;
   }
 }
+.clients {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 16px;
+}
+.clients li {
+  border-left: 3px solid var(--gold);
+  padding-left: 14px;
+  color: var(--muted);
+}
+.clients b {
+  font-family: var(--display);
+  color: var(--ink);
+}
+.clients span {
+  font: 500 0.9rem var(--display);
+}
+.repo {
+  display: inline-block;
+  margin-top: 16px;
+  font: 700 0.95rem var(--display);
+  text-decoration: none;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 1px;
+}
+.repo:hover {
+  background: var(--gold);
+  color: #1d1a45;
+}
 footer {
   padding: 72px 0 56px;
 }
@@ -287,6 +318,7 @@ footer h2 {
   align-items: center;
   gap: 32px;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 .hero-top h1 {
   font-size: clamp(2.6rem, 8vw, 5.2rem);

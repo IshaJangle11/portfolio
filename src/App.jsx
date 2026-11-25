@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Reveal from './Reveal.jsx';
-import { profile, about, experienceIntro, experience, skills, education, projects } from './data.js';
+import { profile, about, experience, skills, education, projects } from './data.js';
 
 export default function App() {
   // Light/dark mode: starts from the device setting, the button flips it.
@@ -42,6 +42,7 @@ export default function App() {
             </div>
           </div>
           <p className="lede">{profile.intro}</p>
+          <p className="lede">{profile.intro2}</p>
           <nav className="links" aria-label="Profile links">
             {profile.links.map((l) => (
               <a key={l.label} href={l.href} rel="noopener">{l.label}</a>
@@ -77,6 +78,9 @@ export default function App() {
                 {pr.tags.length > 0 && (
                   <div className="tags">{pr.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                 )}
+                {pr.link && (
+                  <a className="repo" href={pr.link} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                )}
               </Reveal>
             ))}
           </div>
@@ -84,13 +88,23 @@ export default function App() {
 
         <Reveal as="section" id="work" aria-labelledby="w">
           <h2 id="w">Experience</h2>
-          <p>{experienceIntro}</p>
-          {experience.map((job) => (
-            <div className="job" key={job.title}>
-              <time>{job.period}</time>
-              <div><h3>{job.title}</h3><p>{job.text}</p></div>
+          <div className="job">
+            <time>{experience.period}</time>
+            <div>
+              <h3>{experience.title}</h3>
+              <p>{experience.text}</p>
+              <ul className="clients">
+                {experience.clients.map((c) => (
+                  <li key={c.name}>
+                    <b>{c.name}</b>
+                    <span> · {c.period}</span>
+                    <br />
+                    {c.text}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
+          </div>
         </Reveal>
 
         <Reveal as="section" id="education" aria-labelledby="e">
